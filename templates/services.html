@@ -43,7 +43,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Chai Guys</a>
+                <a class="navbar-brand topnav" href="/">Chai Guys</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -52,7 +52,7 @@
                         <a href="#about">About Us</a>
                     </li>
                     <li>
-                        <a href="/services">Services</a>
+                        <a href="#">Services</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -64,54 +64,66 @@
         <!-- /.container -->
     </nav>
 
-
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
+    <div class="intro-header" style="padding-top:0px;padding-bottom:20px">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1 style="color:black;">Chai Guys</h1>
-                        <h3 style="color:black;">Serving you the Chai you deserve</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/calchaiguys" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/chaiguys" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                            <li>
-                            <a href="mailto:calchaiguys@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email us!</span></a>
-                            </li>
-                        </ul>
+                        <h1 style="color:blue;">Catering</h1>
+                        <h3 style="color:gold;">Fill out your information so we can cater your next event!</h3>
                     </div>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.intro-header -->
 
-    <!-- Page Content -->
+        <div style="text-align:center;width=100%" class="submitform">
+            <form name="submission" enctype="multipart/form-data" role="form" action="/submitted" method="POST">
+                  <div style="width:100%;" class="col-md-3">
+                      <div class="form-group">
+                          <label for="name">Name: </label> 
+                          <input type="text" id="name" class="form-control" name="fullName" placeholder="Full Name" />
+                      </div>
+                      <div class="form-group">
+                          Email: <input type="email" class="form-control" name="emailAddress" placeholder="Email Address">
+                      </div>
+                      <div class="form-group">
+                          Preferred Contact: <input type="text" class="form-control" name="preferredContact" placeholder="Preferred Contact Method">
+                          <span class="help-block"><i>Email, phone</i></span>
+                      </div>
+                      <div class="form-group">
+                          Phone Number: <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number (optional)">
+                      </div>
+                      <div class="form-group">
+                          Event Date: <input type="text" class="form-control" name="eventDate" placeholder="Event Date">
+                      </div>
+                      <div class="form-group">
+                          Event Time: <input type="text" class="form-control" name="eventTime" placeholder="Event Time">
+                      </div>
+                      <div class="form-group">
+                          Number of People: <input type="text" class="form-control" name="numPeople" placeholder="Number of people">
+                      </div>
+                  </div>
+                  <div class="col-mid-3">
+                    <div class="form-group">
+                      <textarea name="extraText" class="form-control comment-form" rows="11" placeholder="Any extra information can go here!"></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+        </div>
 
-    <!-- Footer -->
-    <footer>
+        <footer>
         <div class="container">
             <p class="copyright text-muted small">Copyright &copy; Chai Guys 2014. All Rights Reserved</p>
         </div>
-    </footer>
+        </footer>
 
-    <!-- jQuery -->
-    <script src="../static/js/jquery.js"></script>
+        <!-- jQuery -->
+        <script src="../static/js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../static/js/bootstrap.min.js"></script>
-
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../static/js/bootstrap.min.js"></script>
 </body>
 
 </html>
