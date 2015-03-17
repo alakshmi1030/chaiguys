@@ -63,10 +63,10 @@ h6 {
 }
 
 .form-group {
-    width: 400px;
-    margin-right: auto;
+/*    width: 600px;
+*/    margin-right: auto;
     margin-left: auto;
-
+    display: inline-block;
 }
 
 .submitform {

@@ -12,5 +12,13 @@ def index():
 def services():
 	return render_template("services.html")
 
+@app.route("/submitted", methods=['POST'])
+def submitted():
+	name = "Full Name: " + request.form["fullName"]
+	email = "Email: " + request.form["emailAddress"]
+	organization = "Organization: " + request.form["organization"]
+	#preferredContact = "Preferred Contact: " + request.form["preferredContact"]
+	phone = "Phone Number: " + request.form["phoneNumber"]
+	extra = "Extra text: " + request.form["extraText"]
 
 app.run()
